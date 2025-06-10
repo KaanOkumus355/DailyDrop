@@ -1,69 +1,96 @@
-💧 DailyDrop
-DailyDrop is a simple and mobile-friendly web app that helps users track their daily water intake, set personal goals, and build healthy hydration habits. With streak tracking, goal customization, and a clean responsive design, DailyDrop keeps hydration fun and effortless.
+# 💧 DailyDrop
 
-🚀 Features
+![Python](https://img.shields.io/badge/Python-3.13.3-blue?logo=python)
+![Flask](https://img.shields.io/badge/Flask-Web%20Framework-lightgrey?logo=flask)
+![SQLite](https://img.shields.io/badge/Database-SQLite-blue?logo=sqlite)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+[![Render](https://img.shields.io/badge/Deployed%20on-Render-3f51b5?logo=render)](https://dailydrop.onrender.com/)
 
-✅ User registration and secure login
+**DailyDrop** is a simple and mobile-friendly web app that helps users track their daily water intake, set personal goals, and build healthy hydration habits. With streak tracking, goal customization, and a clean responsive design, DailyDrop keeps hydration fun and effortless.
 
-🥤 Set and track your daily water intake goal
+---
 
-🔁 Streak system to encourage daily consistency
+## 🚀 Features
 
-📉 Option to subtract mistakenly logged intake
+- ✅ User registration and secure login  
+- 🥤 Set and track your daily water intake goal  
+- 🔁 Streak system to encourage daily consistency  
+- 📉 Option to subtract mistakenly logged intake  
+- 📱 Mobile-friendly UI with installable PWA support  
+- 🌐 Hosted on [Render](https://dailydrop.onrender.com/)
 
-📱 Mobile-friendly UI with installable PWA support
+---
 
-🌐 Hosted on Render
+## 📸 Screenshots
 
-Register Page:
+**Register Page:**  
+![Register](https://github.com/user-attachments/assets/64b0a9f3-ea9c-4695-b649-9878e8c971b6)
 
-![43DAC6A5-553D-460B-B509-419AE7672147](https://github.com/user-attachments/assets/64b0a9f3-ea9c-4695-b649-9878e8c971b6)
+**Login Page:**  
+![Login](https://github.com/user-attachments/assets/15e83d1c-3bc3-421b-b00b-80415ad114f6)
 
-Login Page:
+**Home Page:**  
+![Home](https://github.com/user-attachments/assets/51a5d4a8-b2d1-4e31-8683-3a328e7e8061)
 
-![CCE3191F-64AA-4457-8011-CBAB2C87708F](https://github.com/user-attachments/assets/15e83d1c-3bc3-421b-b00b-80415ad114f6)
+---
 
+## ⚙️ Tech Stack
 
-Home Page:
+- Python & Flask
+- SQLite (via SQLAlchemy)
+- HTML, CSS (mobile-responsive design)
+- Progressive Web App (PWA) features with Service Workers + manifest.json
 
-![7FF2563A-1E27-41F2-B227-C8BC1F6C5672](https://github.com/user-attachments/assets/51a5d4a8-b2d1-4e31-8683-3a328e7e8061)
+---
 
-⚙️ Tech Stack
-Python & Flask
+## 🛠️ Installation & Usage (Local)
 
-SQLite (via SQLAlchemy)
+```bash
+# 1. Clone the repo
+git clone https://github.com/KaanOkumus35/DailyDrop.git
+cd DailyDrop
 
-HTML, CSS (mobile-responsive design)
-
-Progressive Web App (PWA) features with Service Workers + manifest.json
-
-🛠️ Installation & Usage (Local)
-
-1)Clone the repo:
-
-git clone https://github.com/your-username/dailydrop.git
-cd dailydrop
-
-2)Create virtual environment (optional but recommended):
-
+# 2. Create virtual environment (optional but recommended)
 python -m venv .venv
 source .venv/bin/activate  # or .venv\Scripts\activate on Windows
 
-3)Install dependencies:
-
+# 3. Install dependencies
 pip install -r requirements.txt
 
-4)Run the app:
-
+# 4. Run the app
 python app.py
+
+```
 
 Open in your browser:
 Visit http://localhost:5000
 
-☁️ Deployment
-This project is deployed on Render. Once deployed, users can access the site via any browser, and install it like a native app on supported mobile devices. https://dailydrop.onrender.com/
+---
 
-👨‍💻 Author
+## ☁️ Deployment
+This project is deployed on Render. Once deployed, users can access the app via any browser and even install it like a native mobile app (PWA supported).
+
+Live demo: https://dailydrop.onrender.com/
+
+---
+
+## 🗃️ Database
+
+This app uses SQLite as the database, with a file named users.db.
+
+You don’t need to create it manually — the database is automatically generated when the app runs for the first time:
+
+    with app.app_context():
+    
+      db.create_all()
+
+If you're running the app locally, a new users.db will be created in the instance/ folder.
+
+Note: The users.db file is excluded from version control for privacy and security.
+
+---
+    
+## 👨‍💻 Author
 Kaan Okumuş
 Student @ Constructor University Bremen
 Creator of DailyDrop
